@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 1rem;
+}
+
+#order-component{
+    width: 30%;
+    border-radius: 10px;
+    background-color: white;
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 10px 20px rgb(185, 184, 184);
+}
+
+#order-component > img:nth-child(1){
+    width:100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#order-summary{
+    padding:1.5rem;
+}
+
+
+h1{
+    font-weight: 900;
+}
+
+h1,p{
+    text-align: center;
+    margin: 5px;
+    color:hsl(223, 47%, 23%);
+}
+
+#order-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    margin:2rem 0;
+    background-color: hsl(225, 100%, 98%);
+    width:100%;
+    border-radius: 10px;
+}
+
+#order-details a{
+    flex-basis: 40%;
+    text-align: right;
+}
+
+#order-details a:hover{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+button{
+    width: 100%;
+    padding:1rem;
+    border:none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 10px 10px hsl(225, 100%, 94%);
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+#order-summary > a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#order-summary > a:hover{
+   font-weight: 700;
+}
+
+#para1{
+    font-weight: 900;
+}
+
+
+@media only screen and (max-width:370px)  {
+    #order-component{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1100px) and (min-width:760px) {
+    body{
+        font-size: 2rem;
+    }
+    #order-component{
+        width: 80%;
+    }
+    button{
+        font-size: 2rem;
+    }
+}
+
+
+
